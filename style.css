@@ -1,0 +1,75 @@
+html {
+    font-size: 20px;
+  }
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+  }
+
+.title {
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  width: 70%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.wrapper {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 200px;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.grid {
+  /* position:relative; */
+    display: inline-grid;
+    margin:auto;
+    grid-template-columns: repeat(16, auto);
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+
+
+}
+
+.grid-square {
+  /* position: relative; */
+    width: 60px;
+    height: 60px;
+    color: blue;
+    background-color: lightgray;
+}
