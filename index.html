@@ -10,8 +10,17 @@
 </head>
 <body>
     <p class="title">Etch-A-Sketch</p>
+    <!-- <input type="range" id="gridRange" min="8" max="64" value="16" step="8"> -->
+    <!-- <p>Grid Size: <span id="gridRangeValue"></span></p> -->
+    
     <div class="wrapper">
         <div class="button-container">
+            <input class="range-slider" type="range" id="gridRange" min="8" max="64" value="16" step="8">
+            <p class="grid-size">Grid Size: <span id="gridRangeValue"></span></p>
+            <div class="hover-wrapper">
+                <label for="toggleHover">Hover</label>
+                <input type="checkbox" id="toggleHover" checked>
+            </div>
             <button class="btn active" id="black">Black</button>
             <button class="btn" id="rainbow">Rainbow</button>
             <button class="btn" id="darken">Darken</button>

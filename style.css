@@ -15,6 +15,18 @@ body,html {
     justify-content: center;
 }
 
+/* Style the slider and slider text */
+.range-slider {
+  margin: 0;
+
+}
+.grid-size {
+  position: relative;
+  margin: 0;
+  top: -25px;
+}
+
+
 /* Style the buttons */
 .btn {
   border: none;
@@ -55,12 +67,14 @@ body,html {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 704px;
+  width: 704px;
   }
 .grid {
   /* position:relative; */
-    display: inline-grid;
+    display: grid;
     margin:auto;
-    grid-template-columns: repeat(16, auto);
+    /* grid-template-columns: repeat(16, auto); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
 
@@ -68,8 +82,10 @@ body,html {
 
 .grid-square {
   /* position: relative; */
-    width: 60px;
-    height: 60px;
+    /* width: 60px; */
+    /* height: 60px; */
+    grid-column: span 1;
+    grid-row: span 1;
     color: blue;
     background-color: lightgray;
 }
